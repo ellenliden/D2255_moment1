@@ -1,5 +1,213 @@
-<!-- Bulma CSS -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-/>
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bulma – CSS-ramverk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bulma CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar is-dark" role="navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <strong>CSS-ramverk</strong>
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasic"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="index.html">Hem</a>
+          <a class="navbar-item" href="bootstrap.html">Bootstrap</a>
+          <a class="navbar-item is-active" href="bulma.html">Bulma</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Bulma</h1>
+
+        <p class="mb-4">
+          Bulma är ett modernt CSS-ramverk baserat på Flexbox. Det är helt
+          CSS-baserat och innehåller inga JavaScript-komponenter, vilket gör det
+          enkelt att använda och anpassa.
+        </p>
+
+        <p class="mb-5">
+          Läs mer på Bulmas webbplats:
+          <a href="https://bulma.io" target="_blank">https://bulma.io</a>
+        </p>
+        <br />
+        <h2 class="title is-4">Utvärdering av Bulma</h2>
+        <br />
+
+        <h3 class="subtitle is-5">Fördelar</h3>
+        <ul>
+          <li>Enkelt och tydligt klassystem</li>
+          <li>Flexbox-baserad layout</li>
+          <li>Ingen JavaScript krävs</li>
+          <li>Lätt att anpassa designen</li>
+        </ul>
+        <br />
+        <h3 class="subtitle is-5 mt-4">Nackdelar</h3>
+        <ul>
+          <li>
+            Bulma saknar färdiga JavaScript-komponenter, jag måste lägga till
+            ett separat JavaScript för interaktivitet.
+          </li>
+          <li>
+            Även om layouten med flexbox är bra, kan den vara svårare för de som
+            är vana vid traditionella rutnät.
+          </li>
+        </ul>
+
+        <!-- Tabell -->
+        <section class="section">
+          <h2 class="title is-4">Projekt byggda med Bulma</h2>
+
+          <table class="table is-bordered is-striped is-fullwidth">
+            <thead>
+              <tr>
+                <th>Projektnamn</th>
+                <th>Typ av webbplats</th>
+                <th>Status</th>
+                <th>Ansvarig</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Portfolio</td>
+                <td>Personlig</td>
+                <td>Färdig</td>
+                <td>Ellen</td>
+              </tr>
+              <tr>
+                <td>Företagssida</td>
+                <td>Informationssida</td>
+                <td>Pågående</td>
+                <td>Tim</td>
+              </tr>
+              <tr>
+                <td>Webbshop</td>
+                <td>E-handel</td>
+                <td>Planerad</td>
+                <td>Karl</td>
+              </tr>
+              <tr>
+                <td>Blogg</td>
+                <td>Innehållssida</td>
+                <td>Färdig</td>
+                <td>Anna</td>
+              </tr>
+              <tr>
+                <td>Eventplattform</td>
+                <td>Tjänst</td>
+                <td>Pågående</td>
+                <td>Erik</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Formulär -->
+        <section class="section">
+          <h2 class="title is-4">Lägg till nytt projekt</h2>
+
+          <form>
+            <div class="field">
+              <label class="label">Projektnamn</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Ange projektnamn"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Typ av webbplats</label>
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select>
+                    <option selected>Välj typ</option>
+                    <option>Personlig</option>
+                    <option>Informationssida</option>
+                    <option>E-handel</option>
+                    <option>Tjänst</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Projektstatus</label>
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select>
+                    <option selected>Välj status</option>
+                    <option>Planerad</option>
+                    <option>Pågående</option>
+                    <option>Färdig</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Ansvarig / kommentar</label>
+              <div class="control">
+                <textarea
+                  class="textarea"
+                  placeholder="Ange ansvarig person eller team"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <button class="button is-success" type="submit">
+                  Spara projekt
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <!-- Bulma navbar hamburger script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const burgers = document.querySelectorAll(".navbar-burger");
+        burgers.forEach((burger) => {
+          burger.addEventListener("click", () => {
+            const target = burger.dataset.target;
+            const menu = document.getElementById(target);
+            burger.classList.toggle("is-active");
+            menu.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
